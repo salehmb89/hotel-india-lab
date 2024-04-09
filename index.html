@@ -34,22 +34,18 @@
             />
             <br />
             <!-- Email -->
-            <form>
-              
-              <label for="userName" class="form-label">Email Address</label>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="sal123@gmail.com" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
             
-              <input type="email" id="email" name="email" placeholder="sal123@gmail.com">
-            </form>
             <!-- Phone# -->
-            <form>
-              
-              <label for="userName" class="form-label">Phone Number</label>
-            
-              <input type="text" id="phoneNumber" name="userName" placeholder="(256) ###-####" required>
-            
-              <input type="reset" value="Clear">
-            
-            </form>
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="(256) ###-####" pattern="[0-9]{4}-[0-9]{4}" required>
+              <div class="form-text">Format: ###-####</div>
+            </div>
             <br />
             <!-- Birthday for reasons -->
             <form>
@@ -71,7 +67,7 @@
             </form>
             <br />
             <!-- Radio -->
-            <p>What is your goal? :</p>
+            <h5>What is your goal? :</h5>
 <div>
   <input type="radio" name="size" value="Weight Loss" id="xs" required>
   <label for="xs" class="form-label">Weight Loss</label>
@@ -84,9 +80,9 @@
   <input type="radio" name="size" value="Cross Training" id="m" required>
   <label for="m" class="form-label">Cross Training</label>
 </div>
-<p>
+<h5>
   Training Location:
-</p>
+</h5>
 <div>
   <input type="radio" name="location" value="Outdoor & In-Home" id="location1" required>
   <label for="location1" class="form-label"><i class="location-icon fas fa-map-marker-alt"></i> Outdoor & In-Home</label>
@@ -100,9 +96,9 @@
   <label for="location3" class="form-label"><i class="location-icon fas fa-dumbbell"></i> Gym</label>
 </div>
 <br>
-<p>
+<h5>
   Trainer Gender:
-</p>
+</h5>
 <div>
   <input type="radio" name="gender" value="Male" id="male" required>
   <label for="male" class="form-label">Male</label>
@@ -212,7 +208,7 @@
           <h2 class="text-white">Quick Links</h2>
           <ul>
             <li><a href="https://github.com/salehmb89/hotel-lab" target="_blank" rel="noopener noreferrer" class="text-white">See This Repo</a></li>
-            <li><a href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsalehmb89.github.io%2Fdev-foxtrot%2Findex.html" target="_blank" rel="noopener noreferrer" class="text-white">Check Validity</a></li>
+            <li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fgithub.com%2Fsalehmb89%2Fhotel-lab%2Fblob%2Fmain%2Findex.html" target="_blank" rel="noopener noreferrer" class="text-white">Check Validity</a></li>
           </ul>
         </div>
         <!-- Media Links -->
@@ -246,6 +242,3 @@
     <script src="./scripts/script.js"></script>
   </body>
 </html>
-
-
-
