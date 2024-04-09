@@ -2,19 +2,38 @@ $(document).ready(function () {
   console.log("doc is ready");
 
   // Define user data
-  let userData = ["Saleh", "somethinglese"];
   let userJSON = {
     email: "salehmb13@gmail.com",
     phoneNumber: "(256)322-8629",
-    userName: "Saleh Basalim"
-  };
+    userName: "Saleh Basalim",
+    birthdaydate: "10/10/1989",
+    username: "Salehb89",
+    password: "123456"
+};
 
+// Function to load user data into form fields
+$("#loadData").click(() => {
+    console.log("in button click event");
+    $("#userName").val(userJSON.userName);
+    $("#email").val(userJSON.email);
+    $("#phoneNumber").val(userJSON.phoneNumber);
+    $("#birthdaydate").val(userJSON.birthdaydate);
+    $("#username").val(userJSON.username);
+    $("#password").val(userJSON.password);
+
+    alert("User profile data loaded successfully!");
+});
   // Function to load user data into form fields
   $("#loadData").click(() => {
     console.log("in button click event");
     $("#userName").val(userJSON.userName);
     $("#email").val(userJSON.email);
     $("#phoneNumber").val(userJSON.phoneNumber);
+    $("#birthdaydate").val(userJSON.birthdaydate);
+    $("#username").val(userJSON.username);
+    $("#password").val(userJSON.password);
+
+    alert("User profile data loaded successfully!");
   });
 
   // Submit form
