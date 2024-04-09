@@ -1,78 +1,170 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Hotel-lab</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
-<link rel="stylesheet" href="./styles/style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>IndiaLab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  </head>
+  <body class="container-fluid">
+    <div class="topnav">
+      <a class="active" href="#home">Alec Moore</a>
+      <a href="https://github.com/alecmo26/IndiaLab" target= "_blank">CODE</a>
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Falecmo26.github.io%2FIndiaLab%2F" target= "_blank"> Check Page Validity</a>
+    </div>
 
-</head>
-<body>
+    <div class="row"></div>
 
-  <!--nav bar-->
-<div class="topnav">
-  <a class="navbar-brand" >Kristina W</a>
-  <a class="nav-link active" href=https://github.com/kwilliams31/Hotel-lab target="_blank">check out repo</a>
-<a class="nav-link active" href="https://validator.nu/?doc=https%3A%2F%2Fkwilliams31.github.io%2FHotel-lab%2F" target="_blank" >Code Validation</a>
+      <!-- this is my name card -->
+      <div class="col-sm-8 offset-sm-2">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Band Registration Form</h2>
+            <p class="card-text">Please fill out all information below</p>
+
+            <label for="userName" class="form-label">What is your first and last name?</label>
+            <input
+              type="text"
+              id="userName"
+              class="form-control"
+              name="userName"
+            />
+            <br />
+            <!-- Email -->
+            <form>
+              
+              <label for="userName" class="form-label">Email Address</label>
+            
+              <input type="email" id="email" name="email" placeholder="squidward@gmail.com">
+            
+              <input type="submit" value="Send confirmation email">
+            
+            </form>
+            <!-- Phone# -->
+            <form>
+              
+              <label for="userName" class="form-label">Phone Number</label>
+            
+              <input type="text" id="phoneNumber" name="userName" placeholder="(256) ###-####" required>
+            
+              <input type="reset" value="Clear">
+            
+            </form>
+            <br />
+            <!-- Birthday for reasons -->
+            <form>
+              <label for="birthdaytime" class="form-label">Birthday (date and time):</label>
+              <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            </form>
+            <br />
+            <!-- Radio -->
+            <p>Select your instrument or if you are a singer:</p>
+<div>
+  <input type="radio" name="size" value="Guitar" id="xs" required>
+  <label for="xs" class="form-label">Guitar</label>
 </div>
-
-<!--card with name input form-->
-<div class="row">
-<div class="col-md-7 offset-sm-3">
-<div class="card">
-  <img class="img-fluid" src="photos/underwater.jpg" alt="underwater with fish">
-
-  <!--Creating the card with the information for the user to input-->
-  <div class="card-body">
-    <h5 class="card-title">This is the sign up for underwater team bingo! 🌊🐠🐟🐬🐳</h5>
-    <p class="card-title">Please complete this information for the sign up</p>
-
-      <form id="userInput">
-        <!--Getting email and password input-->
-        <p> Create an account to store your information!</p>
-        <label for="userEmail">Email:</label>
-        <input type="email" id="userEmail" name="email" placeholder="sharkman@oceanmail.com" required><br><br>
-        <label for="userPwd">Password: (min 5)</label>
-        <input type="password" id="userPwd" name="pwd" minlength="5" placeholder="*****" required><br><br>
-
-      <!--user selecting a date and time to sign up-->
-      <input type="Date"> Select a date to join! 
-      <br> <br>
-      <input type="Time"> After selecting a date, chose a time between 11am and 3pm
-      <br> <br>
-
-      <!--text area for any information from user-->
-      <textarea id="comment" name="commment" rows="4" cols="50">If you have any comments, questions, or concerns please type them here. We hope to see you in the water soon! 🐠 </textarea>
-      <br>
-
-      <!--verifying human-->
-      I am not a robot (or shark) <input type="checkbox" id="myCheck" onclick="myFunction()">
-      <!--connecting to JS, submit button shows after verification-->
-      <input id = "submitButton" type="submit" style="display:none">
-
-    </form>
-  </div>
+<div>
+  <input type="radio" name="size" value="Drums" id="s" required>
+  <label for="s" class="form-label">Drums</label>
 </div>
+<div>
+  <input type="radio" name="size" value="Piano" id="m" required>
+  <label for="m" class="form-label">Piano</label>
 </div>
+<div>
+  <input type="radio" name="size" value="Bass" id="l" required>
+  <label for="l" class="form-label">Bass</label>
 </div>
+<div>
+  <input type="radio" name="size" value="Tamberine" id="xl" required>
+  <label for="xl" class="form-label">Tamberine</label>
+</div>
+<div>
+  <input type="radio" name="size" value="Singer" id="xxl" required>
+  <label for="xxl" class="form-label">Singer</label>
+</div>
+<p>
+  <button id="btn">Show Selected Instrument</button>
+</p>
+<p id="output"></p>
+            <br />
+            <!-- One input to another input -->
+        <h5>Instrument experience info</h5>
+
+        <label for="instrumentKind" class="form-label">Instrument you can play</label>
+        <select id="instrumentKind" class="form-select" name="instrumentName">
+          <option value="" disabled selected>Select your option</option>
+          <option value="guitar">Guitar</option>
+          <option value="drums">Drums</option>
+          <option value="piano">Piano</option>
+          <option value="bass">Bass</option>
+          <option value="tamberine">Tamberine</option>
+          <option value="singer">Singer</option>
+        </select>
+        <hr />
+        <label for="instrumentName" class="form-label">Experience</label>
+        <select id="instrumentName" class="form-select" name="instrumentName" disabled>
+          <option>☝🏼select your instrument</option>
+        </select>
+        <br />
+            <!-- Check Box -->
+            <label for="userName" class="form-label">What days are you available to practice?</label>
+            Monday: <input type="checkbox" id="myCheck1" onclick="myFunction()">
+            Tuesday: <input type="checkbox" id="myCheck2" onclick="myFunction()">
+            Wednesday: <input type="checkbox" id="myCheck3" onclick="myFunction()">
+            Thursday: <input type="checkbox" id="myCheck4" onclick="myFunction()">
+            Friday: <input type="checkbox" id="myCheck5" onclick="myFunction()">
+            Saturday: <input type="checkbox" id="myCheck6" onclick="myFunction()">
+            Sunday: <input type="checkbox" id="myCheck7" onclick="myFunction()">
+            <br />
+            <!-- Textarea -->
+            <form>
+              <p>Why are you interested in joining our band?</p>
+              <label for="w3review" ></label>
+              <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+              <br>
+            </form>
+            <br />
+            <!-- Password -->
+            <form>
+              
+              <label for="userName" class="form-label">If referred by a member of the band please enter the password they gave you</label>
+            
+              <input type="password" id="userPassword" name="userName">
+            
+              <input id="submit" type="reset" value="Clear">
+            
+            </form>
+
+
+            <br />
+            <form>
+            <button id="submitButton" type="submit" class="btn btn-primary">Submit Form</button>
+            </form>
+
+            <button id="loadData" class="btn btn-secondary">
+              Load my Profile Info
+            </button>
+
+
+          </div>
+        </div>
+      </div>
+    
 
 
 
-
-<!-- <form id="check">
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="value1">
-  <label for="vehicle1">do you wear wigs?</label><br>
-  <input type="checkbox" id="vehicle2" name="vehicle2" value="value2">
-  <label for="vehicle2">have you worn wigs</label><br>
-  <input type="checkbox" id="vehicle3" name="vehicle3" value="value3">
-  <label for="vehicle3">will you wear wigs</label><br><br>
-  <input type="submit" value="Submit">
-</form> -->
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
-<script src="./scripts/script.js"></script>
-
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
