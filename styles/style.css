@@ -1,0 +1,53 @@
+body{
+    background-color: #c4e3c2;
+    color: #255dbd;
+    font-size: 18px;
+}
+
+.card{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.card-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;;
+}
+
+.topnav {
+    background-color: #8db377;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+  
+  .nav-link {
+    float: right;
+  }
+  
+  .nav-link:hover{
+    color: #FAFAFA;
+  }
+  
+  .topnav a{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .navbar-brand{
+    float: left;
+  }
+
+  #userEmail {  
+    width: 280px;
+   }
+
+  #Userpwd{
+    width: 198px;
+  }
+
+  #submitButton{
+    background-color: #859eca;
+    margin-top: 10px;
+  }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel-lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+<link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+
+  <!--nav bar-->
+<div class="topnav">
+  <a class="navbar-brand" >Kristina W</a>
+  <a class="nav-link active" href=https://github.com/kwilliams31/Hotel-lab target="_blank">check out repo</a>
+<a class="nav-link active" href="https://validator.nu/?doc=https%3A%2F%2Fkwilliams31.github.io%2FHotel-lab%2F" target="_blank" >Code Validation</a>
+</div>
+
+<!--card with name input form-->
+<div class="row">
+<div class="col-md-7 offset-sm-3">
+<div class="card">
+  <img class="img-fluid" src="photos/underwater.jpg" alt="underwater with fish">
+
+  <!--Creating the card with the information for the user to input-->
+  <div class="card-body">
+    <h5 class="card-title">This is the sign up for underwater team bingo! 🌊🐠🐟🐬🐳</h5>
+    <p class="card-title">Please complete this information for the sign up</p>
+
+      <form id="userInput">
+        <!--Getting email and password input-->
+        <p> Create an account to store your information!</p>
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" name="email" placeholder="sharkman@oceanmail.com" required><br><br>
+        <label for="userPwd">Password: (min 5)</label>
+        <input type="password" id="userPwd" name="pwd" minlength="5" placeholder="*****" required><br><br>
+
+      <!--user selecting a date and time to sign up-->
+      <input type="Date"> Select a date to join! 
+      <br> <br>
+      <input type="Time"> After selecting a date, chose a time between 11am and 3pm
+      <br> <br>
+
+      <!--text area for any information from user-->
+      <textarea id="comment" name="commment" rows="4" cols="50">If you have any comments, questions, or concerns please type them here. We hope to see you in the water soon! 🐠 </textarea>
+      <br>
+
+      <!--verifying human-->
+      I am not a robot (or shark) <input type="checkbox" id="myCheck" onclick="myFunction()">
+      <!--connecting to JS, submit button shows after verification-->
+      <input id = "submitButton" type="submit" style="display:none">
+
+    </form>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- <form id="check">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="value1">
+  <label for="vehicle1">do you wear wigs?</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="value2">
+  <label for="vehicle2">have you worn wigs</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="value3">
+  <label for="vehicle3">will you wear wigs</label><br><br>
+  <input type="submit" value="Submit">
+</form> -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
+<script src="./scripts/script.js"></script>
+
+</body>
+</html>
