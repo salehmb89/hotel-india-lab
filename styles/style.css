@@ -25,7 +25,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #5e7e07;
+  background-color: #2b6161;
   color: white;
   font-family: 'Oswald', sans-serif;
 }
@@ -47,22 +47,22 @@ body {
 h3,
 label,
 p {
-  background-color: rgb(167, 167, 167);
+  background-color: rgb(65, 94, 121);
 }
 
 
 .card {
   margin-top: 1rem;
-  background-color:rgb(94, 8, 8)
+  background-color:rgb(65, 94, 121)
 }
 
-.card-text{background-color:rgb(94, 8, 8);
+.card-text{background-color:rgb(65, 94, 121);
 text-align:center 
 }
-.card-title{background-color:rgba(94, 8, 8);
+.card-title{background-color:rgba(65, 94, 121);
   text-align:center 
   }
-.form-label{background-color:rgb(94, 8, 8)
+.form-label{background-color:rgb(65, 94, 121)
 }
 
 #btnGetFacts{
@@ -71,5 +71,5 @@ text-align:center
 }
 
 label {
-  background-color: #5e0707;
+  background-color: rgb(65, 94, 121);
 }
