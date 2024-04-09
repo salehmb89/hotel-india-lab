@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap");
 
 body {
-  background-image: url('https://i.pinimg.com/474x/25/fb/20/25fb2051fd2d82590f6b46071b9d9524.jpg');}
+  background-image: url("https://t4.ftcdn.net/jpg/03/33/91/97/360_F_333919715_R1mDUWPgwB2CRvSCNnvnmtn64gPY40ZL.jpg");}
 
 .topnav {
   overflow: hidden;
@@ -10,7 +10,7 @@ body {
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #928c8c;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -25,7 +25,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #5e7e07;
   color: white;
   font-family: 'Oswald', sans-serif;
 }
@@ -53,16 +53,16 @@ p {
 
 .card {
   margin-top: 1rem;
-  background-color:rgb(167, 167, 167)
+  background-color:rgb(94, 8, 8)
 }
 
-.card-text{background-color:rgb(167, 167, 167);
+.card-text{background-color:rgb(94, 8, 8);
 text-align:center 
 }
-.card-title{background-color:rgb(167, 167, 167);
+.card-title{background-color:rgba(94, 8, 8);
   text-align:center 
   }
-.form-label{background-color:rgb(167, 167, 167)
+.form-label{background-color:rgb(94, 8, 8)
 }
 
 #btnGetFacts{
@@ -71,5 +71,5 @@ text-align:center
 }
 
 label {
-  background-color: #fff;
+  background-color: #5e0707;
 }

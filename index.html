@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>IndiaLab</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
+<head>
+    <meta charset="UTF-8">
+    <title>India-Hotel-Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   </head>
   <body class="container-fluid">
     <div class="topnav">
-      <a class="active" href="#home">Alec Moore</a>
-      <a href="https://github.com/alecmo26/IndiaLab" target= "_blank">CODE</a>
-      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Falecmo26.github.io%2FIndiaLab%2F" target= "_blank"> Check Page Validity</a>
+      <a class="active" href="#home">Saleh Basalim</a>
+      <a href="https://github.com/salehmb89/hotel-lab/tree/main" target= "_blank">Repo</a>
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fgithub.com%2Fsalehmb89%2Fhotel-lab%2Fblob%2Fmain%2Findex.html" target= "_blank"> Check Page Validity</a>
     </div>
 
     <div class="row"></div>
@@ -28,7 +22,7 @@
       <div class="col-sm-8 offset-sm-2">
         <div class="card">
           <div class="card-body">
-            <h2 class="card-title">Band Registration Form</h2>
+            <h2 class="card-title">Personal Training Registration Form</h2>
             <p class="card-text">Please fill out all information below</p>
 
             <label for="userName" class="form-label">What is your first and last name?</label>
@@ -44,10 +38,7 @@
               
               <label for="userName" class="form-label">Email Address</label>
             
-              <input type="email" id="email" name="email" placeholder="squidward@gmail.com">
-            
-              <input type="submit" value="Send confirmation email">
-            
+              <input type="email" id="email" name="email" placeholder="sal123@gmail.com">
             </form>
             <!-- Phone# -->
             <form>
@@ -62,104 +53,191 @@
             <br />
             <!-- Birthday for reasons -->
             <form>
-              <label for="birthdaytime" class="form-label">Birthday (date and time):</label>
-              <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+              <label for="birthdaydate" class="form-label">Birthday (date):</label>
+              <input type="date" id="birthdaydate" name="birthdaydate">
+              <br>
             </form>
             <br />
-            <!-- Radio -->
-            <p>Select your instrument or if you are a singer:</p>
-<div>
-  <input type="radio" name="size" value="Guitar" id="xs" required>
-  <label for="xs" class="form-label">Guitar</label>
-</div>
-<div>
-  <input type="radio" name="size" value="Drums" id="s" required>
-  <label for="s" class="form-label">Drums</label>
-</div>
-<div>
-  <input type="radio" name="size" value="Piano" id="m" required>
-  <label for="m" class="form-label">Piano</label>
-</div>
-<div>
-  <input type="radio" name="size" value="Bass" id="l" required>
-  <label for="l" class="form-label">Bass</label>
-</div>
-<div>
-  <input type="radio" name="size" value="Tamberine" id="xl" required>
-  <label for="xl" class="form-label">Tamberine</label>
-</div>
-<div>
-  <input type="radio" name="size" value="Singer" id="xxl" required>
-  <label for="xxl" class="form-label">Singer</label>
-</div>
-<p>
-  <button id="btn">Show Selected Instrument</button>
-</p>
-<p id="output"></p>
-            <br />
-            <!-- One input to another input -->
-        <h5>Instrument experience info</h5>
-
-        <label for="instrumentKind" class="form-label">Instrument you can play</label>
-        <select id="instrumentKind" class="form-select" name="instrumentName">
-          <option value="" disabled selected>Select your option</option>
-          <option value="guitar">Guitar</option>
-          <option value="drums">Drums</option>
-          <option value="piano">Piano</option>
-          <option value="bass">Bass</option>
-          <option value="tamberine">Tamberine</option>
-          <option value="singer">Singer</option>
-        </select>
-        <hr />
-        <label for="instrumentName" class="form-label">Experience</label>
-        <select id="instrumentName" class="form-select" name="instrumentName" disabled>
-          <option>☝🏼select your instrument</option>
-        </select>
-        <br />
-            <!-- Check Box -->
-            <label for="userName" class="form-label">What days are you available to practice?</label>
-            Monday: <input type="checkbox" id="myCheck1" onclick="myFunction()">
-            Tuesday: <input type="checkbox" id="myCheck2" onclick="myFunction()">
-            Wednesday: <input type="checkbox" id="myCheck3" onclick="myFunction()">
-            Thursday: <input type="checkbox" id="myCheck4" onclick="myFunction()">
-            Friday: <input type="checkbox" id="myCheck5" onclick="myFunction()">
-            Saturday: <input type="checkbox" id="myCheck6" onclick="myFunction()">
-            Sunday: <input type="checkbox" id="myCheck7" onclick="myFunction()">
-            <br />
-            <!-- Textarea -->
+            <!-- Username -->
             <form>
-              <p>Why are you interested in joining our band?</p>
-              <label for="w3review" ></label>
-              <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
-              <br>
+              <label for="username" class="form-label">Username</label>
+              <input type="text" id="username" class="form-control" name="username" />
             </form>
             <br />
             <!-- Password -->
             <form>
-              
-              <label for="userName" class="form-label">If referred by a member of the band please enter the password they gave you</label>
-            
-              <input type="password" id="userPassword" name="userName">
-            
-              <input id="submit" type="reset" value="Clear">
-            
+              <label for="password" class="form-label">Password</label>
+              <input type="password" id="password" class="form-control" name="password" />
             </form>
-
-
             <br />
-            <form>
-            <button id="submitButton" type="submit" class="btn btn-primary">Submit Form</button>
-            </form>
+            <!-- Radio -->
+            <p>What is your goal? :</p>
+<div>
+  <input type="radio" name="size" value="Weight Loss" id="xs" required>
+  <label for="xs" class="form-label">Weight Loss</label>
+</div>
+<div>
+  <input type="radio" name="size" value="Muscle Gain" id="s" required>
+  <label for="s" class="form-label">Muscle Gain</label>
+</div>
+<div>
+  <input type="radio" name="size" value="Cross Training" id="m" required>
+  <label for="m" class="form-label">Cross Training</label>
+</div>
+<p>
+  Training Location:
+</p>
+<div>
+  <input type="radio" name="location" value="Outdoor & In-Home" id="location1" required>
+  <label for="location1" class="form-label"><i class="location-icon fas fa-map-marker-alt"></i> Outdoor & In-Home</label>
+</div>
+<div>
+  <input type="radio" name="location" value="Virtual" id="location2" required>
+  <label for="location2" class="form-label"><i class="location-icon fas fa-globe-europe"></i> Virtual</label>
+</div>
+<div>
+  <input type="radio" name="location" value="Gym" id="location3" required>
+  <label for="location3" class="form-label"><i class="location-icon fas fa-dumbbell"></i> Gym</label>
+</div>
+<br>
+<p>
+  Trainer Gender:
+</p>
+<div>
+  <input type="radio" name="gender" value="Male" id="male" required>
+  <label for="male" class="form-label">Male</label>
+</div>
+<div>
+  <input type="radio" name="gender" value="Female" id="female" required>
+  <label for="female" class="form-label">Female</label>
+</div>
 
+
+<p>
+  <button id="btn">Show Selected goal?</button>
+</p>
+<p id="output"></p>
+            <br />
+            <!-- One input to another input -->
+        <h5>What motivates you to exercise? </h5>
+        <select id="treaningName" class="form-select" name="treaningName">
+          <option value="" disabled selected>Select your option</option>
+          <option value="guitar">Improving health</option>
+          <option value="drums">Boosting immune system</option>
+          <option value="piano">Looking better</option>
+          <option value="bass">Building strength and endurance</option>
+        </select>
+        <hr />
+        <h5>How regularly do you exercise?</h5>
+        <select id="regularity" class="form-select" name="regularity">
+          <option value="" disabled selected>Select your option</option>
+          <option value="I have never done regular workouts before">I have never done regular workouts before</option>
+          <option value="I do exercise, but not regularly">I do exercise, but not regularly</option>
+          <option value="Regularly — 1 or more workouts per week">Regularly — 1 or more workouts per week</option>
+        </select>
+        <br />
+            <!-- Check Box -->
+            <fieldset>
+              <legend class="form-label">Available Days</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="myCheck1" onclick="myFunction()">
+                <label class="form-check-label" for="myCheck1">Monday</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="myCheck2" onclick="myFunction()">
+                <label class="form-check-label" for="myCheck2">Tuesday</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="myCheck3" onclick="myFunction()">
+                <label class="form-check-label" for="myCheck3">Wednesday</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="myCheck4" onclick="myFunction()">
+                <label class="form-check-label" for="myCheck4">Thursday</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="myCheck5" onclick="myFunction()">
+                <label class="form-check-label" for="myCheck5">Friday</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="myCheck6" onclick="myFunction()">
+                <label class="form-check-label" for="myCheck6">Saturday</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="myCheck7" onclick="myFunction()">
+                <label class="form-check-label" for="myCheck7">Sunday</label>
+              </div>
+            </fieldset>
+            <br />
+            <label for="time" class="form-label">Preferred Time to Workout:</label>
+            <select id="time" name="time">
+              <option value="" selected disabled hidden>Select an Option</option>
+              <option value="Morning">Morning</option>
+              <option value="Afternoon">Afternoon</option>
+              <option value="Evening">Evening</option>
+            </select>
+            <br />
+            <!-- Time -->
+            <form>
+              <label for="timeInput" class="form-label">Time (time):</label>
+              <input type="time" id="timeInput" name="time">
+            </form>
+            <br />
+            <!-- Textarea -->
+            <form>
+              <p>Why are you interested in joining our band?</p>
+              <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+              <br>
+            </form>
+            <br />
+            <br />
+            <form id="registrationForm">
+              <!-- Your form inputs -->
+              <button type="submit" class="btn btn-primary">Submit Form</button>
+            </form>
+            <div id="thankYou" style="display: none;">Thank you for your submission!</div>
+            
+            <br />
             <button id="loadData" class="btn btn-secondary">
               Load my Profile Info
             </button>
-
-
-          </div>
+    </div>
+     <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-white">
+    <hr class="border-white">
+    <section class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <!-- Quick Links -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h2 class="text-white">Quick Links</h2>
+          <ul>
+            <li><a href="https://github.com/salehmb89/hotel-lab" target="_blank" rel="noopener noreferrer" class="text-white">See This Repo</a></li>
+            <li><a href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsalehmb89.github.io%2Fdev-foxtrot%2Findex.html" target="_blank" rel="noopener noreferrer" class="text-white">Check Validity</a></li>
+          </ul>
+        </div>
+        <!-- Media Links -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h2 class="text-white">Media</h2>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/saleh-basalim-b10545a4/" target="_blank" rel="noopener noreferrer" class="text-white">LinkedIn</a></li>
+            <li><a href="https://github.com/salehmb89" target="_blank" rel="noopener noreferrer" class="text-white">GitHub</a></li>
+          </ul>
+        </div>
+        <!-- Contact Info -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h2 class="text-white">Contact Me</h2>
+          <ul>
+            <li><a href="mailto:sbasalim@una.edu" class="text-white">sbasalim@una.edu</a></li>
+            <li class="text-white">419-322-8629</li>
+          </ul>
         </div>
       </div>
-    
+    </section>
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: #064158;">
+      © 2024 Copyright: Saleh Basalim
+  </div>
+  </footer>
 
 
 
@@ -168,3 +246,6 @@
     <script src="./scripts/script.js"></script>
   </body>
 </html>
+
+
+
