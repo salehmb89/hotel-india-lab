@@ -1,53 +1,75 @@
-body{
-    background-color: #c4e3c2;
-    color: #255dbd;
-    font-size: 18px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap");
 
-.card{
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-
-.card-title{
-  text-align: center;
-  font-weight: bold;
-  font-size: 22px;;
-}
+body {
+  background-image: url('https://i.pinimg.com/474x/25/fb/20/25fb2051fd2d82590f6b46071b9d9524.jpg');}
 
 .topnav {
-    background-color: #8db377;
-    overflow: hidden;
-    margin-bottom: 5px;
-  }
-  
-  .nav-link {
-    float: right;
-  }
-  
-  .nav-link:hover{
-    color: #FAFAFA;
-  }
-  
-  .topnav a{
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-  }
-  
-  .navbar-brand{
-    float: left;
-  }
+  overflow: hidden;
+  background-color: #333;
+}
 
-  #userEmail {  
-    width: 280px;
-   }
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
 
-  #Userpwd{
-    width: 198px;
-  }
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+}
 
-  #submitButton{
-    background-color: #859eca;
-    margin-top: 10px;
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+.draggable {
+  width: 90px;
+  height: 90px;
+  padding: 0.5em;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#dogeHouse {
+  width: 95%;
+  height: 300px;
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+h3,
+label,
+p {
+  background-color: rgb(167, 167, 167);
+}
+
+
+.card {
+  margin-top: 1rem;
+  background-color:rgb(167, 167, 167)
+}
+
+.card-text{background-color:rgb(167, 167, 167);
+text-align:center 
+}
+.card-title{background-color:rgb(167, 167, 167);
+  text-align:center 
   }
+.form-label{background-color:rgb(167, 167, 167)
+}
+
+#btnGetFacts{
+  background-color: #04AA6D;
+  font-family: 'Oswald', sans-serif;
+}
+
+label {
+  background-color: #fff;
+}
