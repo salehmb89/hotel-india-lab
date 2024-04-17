@@ -13,28 +13,21 @@ $(document).ready(function () {
 
 // Function to load user data into form fields
 $("#loadData").click(() => {
-    console.log("in button click event");
-    $("#userName").val(userJSON.userName);
-    $("#email").val(userJSON.email);
-    $("#phoneNumber").val(userJSON.phoneNumber);
-    $("#birthdaydate").val(userJSON.birthdaydate);
-    $("#username").val(userJSON.username);
-    $("#password").val(userJSON.password);
+  console.log("in button click event");
+  $("#userName").val(userJSON.userName);
+  $("#email").val(userJSON.email);
+  $("#phoneNumber").val(userJSON.phoneNumber);
 
-    alert("User profile data loaded successfully!");
+  // Convert the date format to "MM/DD/YYYY"
+  let birthdayDateParts = userJSON.birthdaydate.split("-");
+  let formattedBirthdayDate = birthdayDateParts[1] + "/" + birthdayDateParts[2] + "/" + birthdayDateParts[0];
+  $("#birthdaydate").val(formattedBirthdayDate);
+
+  $("#username").val(userJSON.username);
+  $("#password").val(userJSON.password);
+
+  alert("User profile data loaded successfully!");
 });
-  // Function to load user data into form fields
-  $("#loadData").click(() => {
-    console.log("in button click event");
-    $("#userName").val(userJSON.userName);
-    $("#email").val(userJSON.email);
-    $("#phoneNumber").val(userJSON.phoneNumber);
-    $("#birthdaydate").val(userJSON.birthdaydate);
-    $("#username").val(userJSON.username);
-    $("#password").val(userJSON.password);
-
-    alert("User profile data loaded successfully!");
-  });
 
   // Submit form
   $("#registrationForm").submit(function (event) {
@@ -64,19 +57,19 @@ $("#loadData").click(() => {
       $("#thankYou").hide(); // Hide the "thank you" message after 2 seconds
     }, 2000);
   }
+// grab the element
+var el = document.getElementById("submitButton");
 
-  var el = document.getElementById("submitButton");
+// click event on that element, run named f/n
+el.addEventListener("click", displayUserName);
 
-  // click event on that element, run named f/n
-  el.addEventListener("click", displayUserName);
-
-  function displayUserName() {
+function displayUserName() {
     // grab the value of the user input
     var elName = document.getElementById("userName");
     //do something with it
     document.getElementById("thankYou").style.display = "block";
     setTimeout(function () {
-      document.getElementById("thankYou").style.display = "none";
+        document.getElementById("thankYou").style.display = "none";
     }, 2000);
-  }
+}
 });
