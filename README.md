@@ -1,4 +1,4 @@
-# Hotel-lab
+# Hotel-india-lab CIS376
 
 <!-- Hotel
 discussing web 1.0, informational
